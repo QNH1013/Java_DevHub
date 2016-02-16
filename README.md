@@ -218,6 +218,58 @@ public static String getTransactionID(JsonObject response) {
 }
 ```
 
+##Step 5: Validate a test
+
+One of the key features of DevHub is the ability to provide automated scenario based validations of pre-defined tests in the portal. Here's an example of validating a test against the portal. Using the example JSON provided above, let's validate test "L_AC_1" in the "Authorization and Capture" set of tests. Please note that for certification, all of your tests must be run through the interface you write for your application. This example is only intended to show you how you can validate your solution.
+
+First follow the steps above to send an Authorization transaction.
+
+In the response you'll see a "RequestId". The "RequestId" is used to uniquely identify the transaction sent through DevHub. We use this value to retrieve the message you just sent and validate it against a test defined in your application. In this case "L_AC_1". Here's an example of the JSON response.
+
+```
+{
+  "litleOnlineResponse": {
+    "@version": "9.3",
+    "@response": "0",
+    "@message": "Valid Format",
+    "authorizationResponse": {
+      "@id": "4306abfcc9a56e42df996a965",
+      "@reportGroup": "1243",
+      "@customerId": "345",
+      "orderId": "1",
+      "response": "000",
+      "responseTime": "2016-02-16T23:18:09",
+      "postDate": "2016-02-16",
+      "message": "Approved",
+      "authCode": "11111 ",
+      "fraudResult": {
+        "avsResult": "01",
+        "cardValidationResult": "M"
+      },
+      "tokenResponse": {
+        "tokenResponseCode": "802",
+        "tokenMessage": "Account number was previously registered",
+        "bin": "445701",
+        "PaymentAccountID": "1111000194360009",
+        "Type": "VI"
+      },
+      "enhancedAuthResponse": {
+        "virtualAccountNumber": "false"
+      },
+      "TransactionID": "82917370336788986"
+    }
+  },
+  "RequestID": "8f4e3838-576f-49e7-9e82-3d2e5b8f2906"
+}
+```
+
+Now click into the feature you wish to validte. In this case the "Authorization and Capture"
+![Dashboard Feature](http://apideveloper.vantiv.com/sites/default/files/Dashboard%20Feature.png)
+
+Enter the TestId followed by the RequestID returned in the response. Now click on the yellow validate button. The system will provide a summary of all items that passed along with those that need to be fixed. 
+![Validate a test](http://apideveloper.vantiv.com/sites/default/files/ValidateTest.png)
+
+
 ###Copyright (c) 2016 Vantiv, Inc. - All Rights Reserved.
 
 Sample Code is for reference only and is solely intended to be used for educational purposes and is provided “AS IS” and “AS AVAILABLE” and without warranty. It is the responsibility of the developer to  develop and write its own code before successfully certifying their solution.  
