@@ -21,7 +21,7 @@ This repository demonstrates sending transactions to Vantiv DevHub.
 
 Login to your DevHub account, create an application, and click on that application to integrate.  You will see a webpage like the following.  You will need the LicenseId, the AcceptorID, and the endpoint URL's. Here are a few key resources to be aware of once you create an account and scope an application. 
 
-![Image of DevHub developer dashboard](https://apideveloper.vantiv.com/sites/default/files/Dev%20dashboard%20Page.png)
+![Image of DevHub developer dashboard](https://apideveloper.vantiv.com/sites/default/files/Dev dashboard Page.png)
 
 Before using the sample application please locate the src\request\Config.java 
 You'll need to enter the license Id you obtained in the portal into the "license" field. To learn more about how the code is setting the license, please reference the file src\request\Request.java to see how it's set in the HTTPS header.
