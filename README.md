@@ -41,7 +41,7 @@ Resources
 * The src\Test.java provides a way to begin trying out the different API transaction types. 
 * API documentation for more information: https://apideveloper.vantiv.com/docs/devhub-developer
 * Endpoint reference which provides the different endpoint URL's: https://apideveloper.vantiv.com/docs/endpoint-reference-devhub
-* Postman examples https://www.getpostman.com/collections/332d5043da14439823aa
+* Postman examples (You can import the collection using this URL and try out tests once you enter the License in the header) https://www.getpostman.com/collections/332d5043da14439823aa
 
 In the file src\Test.Java you can simply uncomment the transactions you'd like to try out. For example, the following will send an example of an Authorization transactions.
 
