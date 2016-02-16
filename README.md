@@ -274,7 +274,8 @@ Enter the TestId followed by the RequestID returned in the response. Now click o
 ![Validate a test](http://apideveloper.vantiv.com/sites/default/files/ValidateTest.png)
 
 
-###Copyright (c) 2016 Vantiv, Inc. - All Rights Reserved.
+
+####Copyright (c) 2016 Vantiv, Inc. - All Rights Reserved.
 
 Sample Code is for reference only and is solely intended to be used for educational purposes and is provided “AS IS” and “AS AVAILABLE” and without warranty. It is the responsibility of the developer to  develop and write its own code before successfully certifying their solution.  
 
