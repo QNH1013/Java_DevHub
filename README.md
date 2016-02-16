@@ -45,7 +45,7 @@ Resources
 
 In the file src\Test.Java you can simply uncomment the transactions you'd like to try out. For example, the following will send an example of an Authorization transactions.
 
-```
+```Java
 //^^^^^^^^^^^^^^^^^^^^^^^^CONFIGURE THE API^^^^^^^^^^^^^^^^^^^^^^^^//
 
 //   Uncomment the sample transaction below that you would like to test
@@ -110,7 +110,7 @@ Content-Length: 764
 
 Although the src\Test.java will handle setting everything for you, we wanted to call out how it works. Please reference the src\request\Request.java The "send()" function handles converting the object to a Json string as well as setting the header information for the request.
 
-```
+```Java
 public String send() {
 	if (Config.doNotSend) {
 		return this.toJSON();
@@ -173,7 +173,7 @@ public String toJSON() {
 The sample demonstrates obtaining the string response using the following in the src\request\Request.java The "getResponse()" function. 
 
 
-```
+```Java
 private String getResponse(InputStream is) throws IOException {
 	BufferedReader rd = new BufferedReader(new InputStreamReader(is));
 	StringBuilder response = new StringBuilder();
@@ -193,7 +193,7 @@ private String getResponse(InputStream is) throws IOException {
 
 An example of locating specific meta data in the response can be found by referencing the src\request\Utilities.java The "getTransactionID()" function. In this case we are extracting the TransactionID. 
 
-```
+```Java
 /**
  * Extracts the transactionID from a response object
  * @param response must be the response of a transaction
