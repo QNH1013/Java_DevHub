@@ -222,9 +222,11 @@ public static String getTransactionID(JsonObject response) {
 
 One of the key features of DevHub is the ability to provide automated scenario based validations of pre-defined tests in the portal. Here's an example of validating a test against the portal. Using the example JSON provided above, let's validate test "L_AC_1" in the "Authorization and Capture" set of tests. Please note that for certification, all of your tests must be run through the interface you write for your application. This example is only intended to show you how you can validate your solution.
 
-First follow the steps above to send an Authorization transaction.
+First, follow the steps above to send an Authorization transaction.
 
-In the response you'll see a "RequestId". The "RequestId" is used to uniquely identify the transaction sent through DevHub. We use this value to retrieve the message you just sent and validate it against a test defined in your application. In this case "L_AC_1". Here's an example of the JSON response.
+In the response you'll see a "RequestID". The "RequestID" is used to uniquely identify the transaction sent through DevHub. We use this value to retrieve the message you just sent and validate it against a test defined in your application. In this case "L_AC_1". 
+
+Here's an example of the JSON response.
 
 ```
 {
@@ -263,10 +265,12 @@ In the response you'll see a "RequestId". The "RequestId" is used to uniquely id
 }
 ```
 
-Now click into the feature you wish to validte. In this case the "Authorization and Capture"
+Now click into the feature you wish to validate. In this case the "Authorization and Capture"
+
 ![Dashboard Feature](http://apideveloper.vantiv.com/sites/default/files/Dashboard%20Feature.png)
 
 Enter the TestId followed by the RequestID returned in the response. Now click on the yellow validate button. The system will provide a summary of all items that passed along with those that need to be fixed. 
+
 ![Validate a test](http://apideveloper.vantiv.com/sites/default/files/ValidateTest.png)
 
 
