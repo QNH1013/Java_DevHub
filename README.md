@@ -289,7 +289,8 @@ Enter the TestId followed by the RequestID returned in the response. Now click o
 		> Model (folder): Data definition of the API.
 		> Services (folder): Transaction type definitions for items used across Check and Credit.
 ```
-		
+	
+	
 ####Copyright (c) 2016 Vantiv, Inc. - All Rights Reserved.
 
 Sample Code is for reference only and is solely intended to be used for educational purposes and is provided “AS IS” and “AS AVAILABLE” and without warranty. It is the responsibility of the developer to  develop and write its own code before successfully certifying their solution.  
