@@ -276,18 +276,18 @@ Enter the TestId followed by the RequestID returned in the response. Now click o
 
 ##Folder Contents
 ```
-* src
-	* Test.java : Used as a starting point to try out the API using the Sample Code.
-	* request (folder)
-		* Config.java: Used to set the base endpoint URL, license, and optional proxy settings should your company have a proxy.
-		* Request.java: Contains examples of sending a tranaction, converting an object to JSON as well as serializing the response to JSON.
-		* SampleRequests.java: The following data generator examples provide test values that can be set per each transaction type. 
-		* Utilities.java: Useful example of code like extracting values from a string response. 
-		* Boarding (folder): Transaction types definitions commonly used by payment facilitator partners.
-		* Check (folder): Transaction type definitions
-		* Credit (folder): Transaction type definitions
-		* Model (folder): Data definition of the API.
-		* Services (folder): Transaction type definitions for items used across Check and Credit.
+> src
+	> Test.java : Used as a starting point to try out the API using the Sample Code.
+	> request (folder)
+		> Config.java: Used to set the base endpoint URL, license, and optional proxy settings should your company have a proxy.
+		> Request.java: Contains examples of sending a tranaction, converting an object to JSON as well as serializing the response to JSON.
+		> SampleRequests.java: The following data generator examples provide test values that can be set per each transaction type. 
+		> Utilities.java: Useful example of code like extracting values from a string response. 
+		> Boarding (folder): Transaction types definitions commonly used by payment facilitator partners.
+		> Check (folder): Transaction type definitions
+		> Credit (folder): Transaction type definitions
+		> Model (folder): Data definition of the API.
+		> Services (folder): Transaction type definitions for items used across Check and Credit.
 ```
 		
 ####Copyright (c) 2016 Vantiv, Inc. - All Rights Reserved.
