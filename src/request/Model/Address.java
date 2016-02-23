@@ -2,7 +2,13 @@ package request.Model;
 
 
 public class Address {
-    private String billingName = null;
+    private String address1 = null;
+	private String address2 = null;
+	private String city = null;
+	private String state = null;
+	private String zip = null;
+	private String country = null;
+	private String billingName = null;
 	private String billingFirstName = null;
 	private String billingMiddleInitial = null;
 	private String billingLastName = null;
@@ -28,15 +34,45 @@ public class Address {
 	private String shippingZipcode = null;
 	private String shippingEmail = null;
 	private String shippingPhone = null;
-	private String address1 = null;
-	private String address2 = null;
-	private String city = null;
-	private String state = null;
-	private String zip = null;
-	private String country = null;
     private String billingCountry = null;
 	private String shippingCountry = null;
 
+	public String getAddress1() {
+		return address1;
+	}
+	public void setAddress1(String address1) {
+		this.address1 = address1;
+	}
+	public String getAddress2() {
+		return address2;
+	}
+	public void setAddress2(String address2) {
+		this.address2 = address2;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getZip() {
+		return zip;
+	}
+	public void setZip(String zip) {
+		this.zip = zip;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
 	public String getBillingName() {
 		return billingName;
 	}
@@ -192,42 +228,6 @@ public class Address {
 	}
 	public void setShippingPhone(String shippingPhone) {
 		this.shippingPhone = shippingPhone;
-	}
-	public String getAddress1() {
-		return address1;
-	}
-	public void setAddress1(String address1) {
-		this.address1 = address1;
-	}
-	public String getAddress2() {
-		return address2;
-	}
-	public void setAddress2(String address2) {
-		this.address2 = address2;
-	}
-	public String getCity() {
-		return city;
-	}
-	public void setCity(String city) {
-		this.city = city;
-	}
-	public String getState() {
-		return state;
-	}
-	public void setState(String state) {
-		this.state = state;
-	}
-	public String getZip() {
-		return zip;
-	}
-	public void setZip(String zip) {
-		this.zip = zip;
-	}
-	public String getCountry() {
-		return country;
-	}
-	public void setCountry(String country) {
-		this.country = country;
 	}
 	public String getBillingCountry() {
         return billingCountry;

@@ -2,22 +2,16 @@ package request.Model;
 
 
 public class Card {
-    private String cVV = null;
-	private String cardNumber = null;
+    private String cardNumber = null;
 	private String expirationMonth = null;
 	private String expirationYear = null;
+	private String cVV = null;
 	private String track1Data = null;
 	private String track2Data = null;
 	private String paypageRegistrationID = null;
 	private String accountNumber = null;
     private String type = null;
 
-	public String getCVV() {
-		return cVV;
-	}
-	public void setCVV(String cVV) {
-		this.cVV = cVV;
-	}
 	public String getCardNumber() {
 		return cardNumber;
 	}
@@ -35,6 +29,12 @@ public class Card {
 	}
 	public void setExpirationYear(String expirationYear) {
 		this.expirationYear = expirationYear;
+	}
+	public String getCVV() {
+		return cVV;
+	}
+	public void setCVV(String cVV) {
+		this.cVV = cVV;
 	}
 	public String getTrack1Data() {
 		return track1Data;

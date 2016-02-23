@@ -2,22 +2,16 @@ package request.Boarding;
 
 import request.Request;
 import request.Model.Credentials;
-import request.Model.Application;
-import request.Model.Transaction;
-import request.Model.Reports;
-import request.Model.Address;
 import request.Model.Merchant;
+import request.Model.Address;
 import request.Model.PrimaryContact;
 import request.Model.ECheck;
 import request.Model.SubMerchantFunding;
 
 public class UpdateSubMerchant extends Request<UpdateSubMerchant>  {
 	private Credentials credentials = null;
-	private Application application = null;
-	private Transaction transaction = null;
-	private Reports reports = null;
-	private Address address = null;
 	private Merchant merchant = null;
+	private Address address = null;
 	private PrimaryContact primaryContact = null;
 	private ECheck eCheck = null;
 	private SubMerchantFunding subMerchantFunding = null;
@@ -34,35 +28,17 @@ public class UpdateSubMerchant extends Request<UpdateSubMerchant>  {
 	public void setCredentials(Credentials credentials) {
 		this.credentials = credentials;
 	}
-	public Application getApplication() {
-		return application;
+	public Merchant getMerchant() {
+		return merchant;
 	}
-	public void setApplication(Application application) {
-		this.application = application;
-	}
-	public Transaction getTransaction() {
-		return transaction;
-	}
-	public void setTransaction(Transaction transaction) {
-		this.transaction = transaction;
-	}
-	public Reports getReports() {
-		return reports;
-	}
-	public void setReports(Reports reports) {
-		this.reports = reports;
+	public void setMerchant(Merchant merchant) {
+		this.merchant = merchant;
 	}
 	public Address getAddress() {
 		return address;
 	}
 	public void setAddress(Address address) {
 		this.address = address;
-	}
-	public Merchant getMerchant() {
-		return merchant;
-	}
-	public void setMerchant(Merchant merchant) {
-		this.merchant = merchant;
 	}
 	public PrimaryContact getPrimaryContact() {
 		return primaryContact;

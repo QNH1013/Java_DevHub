@@ -7,18 +7,18 @@ import request.Model.UpdateAddOn;
 import request.Model.DeleteAddOn;
 
 public class ScheduledTask {
-    private String runFrequency = null;
+    private String scheduledTaskID = null;
 	private String runCycles = null;
-	private String startDate = null;
+	private String runStartDate = null;
 	private String amount = null;
 	private CreateDiscount createDiscount = null;
 	private CreateAddOn createAddOn = null;
 	private String subscriptionID = null;
 	private String name = null;
 	private String description = null;
-	private String intervalType = null;
-	private String trialNumberOfIntervals = null;
-	private String trialIntervalType = null;
+	private String runFrequency = null;
+	private String trialRunCycles = null;
+	private String trialRunFrequency = null;
 	private String active = null;
 	private String billingDate = null;
 	private UpdateDiscount updateDiscount = null;
@@ -27,11 +27,11 @@ public class ScheduledTask {
 	private DeleteAddOn deleteAddOn = null;
     
 
-	public String getRunFrequency() {
-		return runFrequency;
+	public String getScheduledTaskID() {
+		return scheduledTaskID;
 	}
-	public void setRunFrequency(String runFrequency) {
-		this.runFrequency = runFrequency;
+	public void setScheduledTaskID(String scheduledTaskID) {
+		this.scheduledTaskID = scheduledTaskID;
 	}
 	public String getRunCycles() {
 		return runCycles;
@@ -39,11 +39,11 @@ public class ScheduledTask {
 	public void setRunCycles(String runCycles) {
 		this.runCycles = runCycles;
 	}
-	public String getStartDate() {
-		return startDate;
+	public String getRunStartDate() {
+		return runStartDate;
 	}
-	public void setStartDate(String startDate) {
-		this.startDate = startDate;
+	public void setRunStartDate(String runStartDate) {
+		this.runStartDate = runStartDate;
 	}
 	public String getAmount() {
 		return amount;
@@ -81,23 +81,23 @@ public class ScheduledTask {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public String getIntervalType() {
-		return intervalType;
+	public String getRunFrequency() {
+		return runFrequency;
 	}
-	public void setIntervalType(String intervalType) {
-		this.intervalType = intervalType;
+	public void setRunFrequency(String runFrequency) {
+		this.runFrequency = runFrequency;
 	}
-	public String getTrialNumberOfIntervals() {
-		return trialNumberOfIntervals;
+	public String getTrialRunCycles() {
+		return trialRunCycles;
 	}
-	public void setTrialNumberOfIntervals(String trialNumberOfIntervals) {
-		this.trialNumberOfIntervals = trialNumberOfIntervals;
+	public void setTrialRunCycles(String trialRunCycles) {
+		this.trialRunCycles = trialRunCycles;
 	}
-	public String getTrialIntervalType() {
-		return trialIntervalType;
+	public String getTrialRunFrequency() {
+		return trialRunFrequency;
 	}
-	public void setTrialIntervalType(String trialIntervalType) {
-		this.trialIntervalType = trialIntervalType;
+	public void setTrialRunFrequency(String trialRunFrequency) {
+		this.trialRunFrequency = trialRunFrequency;
 	}
 	public String getActive() {
 		return active;

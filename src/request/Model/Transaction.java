@@ -3,11 +3,11 @@ package request.Model;
 
 public class Transaction {
     private String customerID = null;
-	private String referenceNumber = null;
-	private String transactionAmount = null;
 	private String partialCapture = null;
+	private String referenceNumber = null;
 	private String authorizationDate = null;
 	private String approvalNumber = null;
+	private String transactionAmount = null;
 	private String transactionID = null;
 	private String convenienceFeeAmount = null;
 	private String partialApprovedFlag = null;
@@ -24,23 +24,17 @@ public class Transaction {
 	public void setCustomerID(String customerID) {
 		this.customerID = customerID;
 	}
-	public String getReferenceNumber() {
-		return referenceNumber;
-	}
-	public void setReferenceNumber(String referenceNumber) {
-		this.referenceNumber = referenceNumber;
-	}
-	public String getTransactionAmount() {
-		return transactionAmount;
-	}
-	public void setTransactionAmount(String transactionAmount) {
-		this.transactionAmount = transactionAmount;
-	}
 	public String getPartialCapture() {
 		return partialCapture;
 	}
 	public void setPartialCapture(String partialCapture) {
 		this.partialCapture = partialCapture;
+	}
+	public String getReferenceNumber() {
+		return referenceNumber;
+	}
+	public void setReferenceNumber(String referenceNumber) {
+		this.referenceNumber = referenceNumber;
 	}
 	public String getAuthorizationDate() {
 		return authorizationDate;
@@ -53,6 +47,12 @@ public class Transaction {
 	}
 	public void setApprovalNumber(String approvalNumber) {
 		this.approvalNumber = approvalNumber;
+	}
+	public String getTransactionAmount() {
+		return transactionAmount;
+	}
+	public void setTransactionAmount(String transactionAmount) {
+		this.transactionAmount = transactionAmount;
 	}
 	public String getTransactionID() {
 		return transactionID;

@@ -5,7 +5,6 @@ public class PayPal {
     private String payerID = null;
 	private String token = null;
 	private String transactionID = null;
-	private String payerEmail = null;
 	private String payPalOrderComplete = null;
 	private String payPalNotes = null;
     
@@ -27,12 +26,6 @@ public class PayPal {
 	}
 	public void setTransactionID(String transactionID) {
 		this.transactionID = transactionID;
-	}
-	public String getPayerEmail() {
-		return payerEmail;
-	}
-	public void setPayerEmail(String payerEmail) {
-		this.payerEmail = payerEmail;
 	}
 	public String getPayPalOrderComplete() {
 		return payPalOrderComplete;

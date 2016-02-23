@@ -29,6 +29,10 @@ public class SampleRequests {
 		card.setType(Card.Type.VI);
         authorization.setCard(card);
 
+		Application application = new Application();
+		application.setApplicationID("1234");
+        authorization.setApplication(application);
+
         return authorization;
     }
 
@@ -47,6 +51,10 @@ public class SampleRequests {
 		transaction.setTransactionID(transactionID);
         reversal.setTransaction(transaction);
 
+		Application application = new Application();
+		application.setApplicationID("1234");
+        reversal.setApplication(application);
+
         return reversal;
     }
 
@@ -64,6 +72,10 @@ public class SampleRequests {
 		Transaction transaction = new Transaction();
 		transaction.setTransactionID(transactionID);
         authorizationCompletion.setTransaction(transaction);
+
+		Application application = new Application();
+		application.setApplicationID("1234");
+        authorizationCompletion.setApplication(application);
 
         return authorizationCompletion;
     }
@@ -95,6 +107,10 @@ public class SampleRequests {
 		card.setType(Card.Type.VI);
         captureGivenAuth.setCard(card);
 
+		Application application = new Application();
+		application.setApplicationID("1234");
+        captureGivenAuth.setApplication(application);
+
         return captureGivenAuth;
     }
 
@@ -112,6 +128,10 @@ public class SampleRequests {
 		Transaction transaction = new Transaction();
 		transaction.setTransactionID(transactionID);
         credit.setTransaction(transaction);
+
+		Application application = new Application();
+		application.setApplicationID("1234");
+        credit.setApplication(application);
 
         return credit;
     }
@@ -141,6 +161,10 @@ public class SampleRequests {
 		card.setType(Card.Type.VI);
         force.setCard(card);
 
+		Application application = new Application();
+		application.setApplicationID("1234");
+        force.setApplication(application);
+
         return force;
     }
 
@@ -168,6 +192,10 @@ public class SampleRequests {
 		card.setCVV("349");
 		card.setType(Card.Type.VI);
         return_.setCard(card);
+
+		Application application = new Application();
+		application.setApplicationID("1234");
+        return_.setApplication(application);
 
         return return_;
     }
@@ -197,6 +225,10 @@ public class SampleRequests {
 		card.setType(Card.Type.VI);
         sale.setCard(card);
 
+		Application application = new Application();
+		application.setApplicationID("1234");
+        sale.setApplication(application);
+
         return sale;
     }
 
@@ -214,6 +246,10 @@ public class SampleRequests {
 		Transaction transaction = new Transaction();
 		transaction.setTransactionID(transactionID);
         void_.setTransaction(transaction);
+
+		Application application = new Application();
+		application.setApplicationID("1234");
+        void_.setApplication(application);
 
         return void_;
     }
@@ -233,6 +269,10 @@ public class SampleRequests {
 		Reports reports = new Reports();
 		reports.setReportGroup("1243");
         credit.setReports(reports);
+
+		Application application = new Application();
+		application.setApplicationID("1234");
+        credit.setApplication(application);
 
         return credit;
     }
@@ -272,6 +312,10 @@ public class SampleRequests {
 		Reports reports = new Reports();
 		reports.setReportGroup("1243");
         return_.setReports(reports);
+
+		Application application = new Application();
+		application.setApplicationID("1234");
+        return_.setApplication(application);
 
         return return_;
     }
@@ -314,6 +358,10 @@ public class SampleRequests {
 		reports.setReportGroup("1243");
         sale.setReports(reports);
 
+		Application application = new Application();
+		application.setApplicationID("1234");
+        sale.setApplication(application);
+
         return sale;
     }
 
@@ -353,6 +401,10 @@ public class SampleRequests {
 		reports.setReportGroup("1243");
         verification.setReports(reports);
 
+		Application application = new Application();
+		application.setApplicationID("1234");
+        verification.setApplication(application);
+
         return verification;
     }
 
@@ -371,6 +423,10 @@ public class SampleRequests {
 		reports.setReportGroup("1243");
         void_.setReports(reports);
 
+		Application application = new Application();
+		application.setApplicationID("1234");
+        void_.setApplication(application);
+
         return void_;
     }
 
@@ -384,14 +440,14 @@ public class SampleRequests {
 
 		ScheduledTask scheduledTask = new ScheduledTask();
 		scheduledTask.setActive("true");
-		scheduledTask.setRunFrequency("12");
+		scheduledTask.setScheduledTaskID("12");
 		scheduledTask.setName("NewPlan");
 		scheduledTask.setDescription("Created New Plan");
-		scheduledTask.setIntervalType("WEEKLY");
+		scheduledTask.setRunFrequency("WEEKLY");
 		scheduledTask.setAmount("12.00");
 		scheduledTask.setRunCycles("5");
-		scheduledTask.setTrialNumberOfIntervals("7");
-		scheduledTask.setTrialIntervalType("DAY");
+		scheduledTask.setTrialRunCycles("7");
+		scheduledTask.setTrialRunFrequency("DAY");
         createPlan.setScheduledTask(scheduledTask);
 
         return createPlan;
@@ -449,7 +505,7 @@ public class SampleRequests {
         scheduledTaskDelete.setCredentials(credentials);
 
 		ScheduledTask scheduledTask = new ScheduledTask();
-		scheduledTask.setSubscriptionID("112233");
+		scheduledTask.setSubscriptionID("12432463563564");
         scheduledTaskDelete.setScheduledTask(scheduledTask);
 
         return scheduledTaskDelete;
@@ -481,10 +537,6 @@ public class SampleRequests {
 		reports.setReportGroup("1243");
         paymentAccountUpdate.setReports(reports);
 
-		PaymentAccount paymentAccount = new PaymentAccount();
-		paymentAccount.setPaymentAccountID("1112000188575454");
-        paymentAccountUpdate.setPaymentAccount(paymentAccount);
-
 		Card card = new Card();
 		card.setCVV("123");
         paymentAccountUpdate.setCard(card);
@@ -492,6 +544,10 @@ public class SampleRequests {
 		Application application = new Application();
 		application.setApplicationID("1234");
         paymentAccountUpdate.setApplication(application);
+
+		PaymentAccount paymentAccount = new PaymentAccount();
+		paymentAccount.setPaymentAccountID("1112000188575454");
+        paymentAccountUpdate.setPaymentAccount(paymentAccount);
 
         return paymentAccountUpdate;
     }
@@ -504,8 +560,8 @@ public class SampleRequests {
         updatePlan.setCredentials(credentials);
 
 		ScheduledTask scheduledTask = new ScheduledTask();
-		scheduledTask.setActive("true");
-		scheduledTask.setRunFrequency("12");
+		scheduledTask.setActive("false");
+		scheduledTask.setScheduledTaskID("12");
         updatePlan.setScheduledTask(scheduledTask);
 
         return updatePlan;
