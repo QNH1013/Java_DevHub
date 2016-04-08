@@ -14,10 +14,10 @@ public class EnhancedData {
 	private String destinationCountryCode = null;
 	private String invoiceReferenceNumber = null;
 	private String orderDate = null;
-	private DetailTax[] detailTaxArray = null;
 	private DetailTax detailTax = null;
-	private LineItem[] lineItemArray = null;
+	private DetailTax[] detailTaxArray = null;
 	private LineItem lineItem = null;
+	private LineItem[] lineItemArray = null;
     private String deliveryType = null;
 
 	public String getPurchaseOrder() {
@@ -86,29 +86,29 @@ public class EnhancedData {
 	public void setOrderDate(String orderDate) {
 		this.orderDate = orderDate;
 	}
-	public DetailTax[] getDetailTaxArray() {
-		return detailTaxArray;
-	}
-	public void setDetailTaxArray(DetailTax[] detailTaxArray) {
-		this.detailTaxArray = detailTaxArray;
-	}
 	public DetailTax getDetailTax() {
 		return detailTax;
 	}
 	public void setDetailTax(DetailTax detailTax) {
 		this.detailTax = detailTax;
 	}
-	public LineItem[] getLineItemArray() {
-		return lineItemArray;
+	public DetailTax[] getDetailTaxArray() {
+		return detailTaxArray;
 	}
-	public void setLineItemArray(LineItem[] lineItemArray) {
-		this.lineItemArray = lineItemArray;
+	public void setDetailTaxArray(DetailTax[] detailTaxArray) {
+		this.detailTaxArray = detailTaxArray;
 	}
 	public LineItem getLineItem() {
 		return lineItem;
 	}
 	public void setLineItem(LineItem lineItem) {
 		this.lineItem = lineItem;
+	}
+	public LineItem[] getLineItemArray() {
+		return lineItemArray;
+	}
+	public void setLineItemArray(LineItem[] lineItemArray) {
+		this.lineItemArray = lineItemArray;
 	}
 	public String getDeliveryType() {
         return deliveryType;

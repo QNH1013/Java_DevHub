@@ -1,29 +1,29 @@
 package request.Credit;
 
 import request.Request;
-import request.Model.Credentials;
-import request.Model.Application;
-import request.Model.Reports;
-import request.Model.Transaction;
 import request.Model.Address;
+import request.Model.Application;
 import request.Model.Card;
-import request.Model.PaymentAccount;
-import request.Model.Terminal;
+import request.Model.Credentials;
 import request.Model.CustomBilling;
 import request.Model.EnhancedData;
+import request.Model.PaymentAccount;
+import request.Model.Reports;
+import request.Model.Terminal;
+import request.Model.Transaction;
 import request.Model.Visa;
 
 public class Force extends Request<Force>  {
-	private Credentials credentials = null;
-	private Application application = null;
-	private Reports reports = null;
-	private Transaction transaction = null;
 	private Address address = null;
+	private Application application = null;
 	private Card card = null;
-	private PaymentAccount paymentAccount = null;
-	private Terminal terminal = null;
+	private Credentials credentials = null;
 	private CustomBilling customBilling = null;
 	private EnhancedData enhancedData = null;
+	private PaymentAccount paymentAccount = null;
+	private Reports reports = null;
+	private Terminal terminal = null;
+	private Transaction transaction = null;
 	private Visa visa = null;
 
     public Force() {
@@ -31,11 +31,11 @@ public class Force extends Request<Force>  {
         
     }
 
-	public Credentials getCredentials() {
-		return credentials;
+	public Address getAddress() {
+		return address;
 	}
-	public void setCredentials(Credentials credentials) {
-		this.credentials = credentials;
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 	public Application getApplication() {
 		return application;
@@ -43,41 +43,17 @@ public class Force extends Request<Force>  {
 	public void setApplication(Application application) {
 		this.application = application;
 	}
-	public Reports getReports() {
-		return reports;
-	}
-	public void setReports(Reports reports) {
-		this.reports = reports;
-	}
-	public Transaction getTransaction() {
-		return transaction;
-	}
-	public void setTransaction(Transaction transaction) {
-		this.transaction = transaction;
-	}
-	public Address getAddress() {
-		return address;
-	}
-	public void setAddress(Address address) {
-		this.address = address;
-	}
 	public Card getCard() {
 		return card;
 	}
 	public void setCard(Card card) {
 		this.card = card;
 	}
-	public PaymentAccount getPaymentAccount() {
-		return paymentAccount;
+	public Credentials getCredentials() {
+		return credentials;
 	}
-	public void setPaymentAccount(PaymentAccount paymentAccount) {
-		this.paymentAccount = paymentAccount;
-	}
-	public Terminal getTerminal() {
-		return terminal;
-	}
-	public void setTerminal(Terminal terminal) {
-		this.terminal = terminal;
+	public void setCredentials(Credentials credentials) {
+		this.credentials = credentials;
 	}
 	public CustomBilling getCustomBilling() {
 		return customBilling;
@@ -90,6 +66,30 @@ public class Force extends Request<Force>  {
 	}
 	public void setEnhancedData(EnhancedData enhancedData) {
 		this.enhancedData = enhancedData;
+	}
+	public PaymentAccount getPaymentAccount() {
+		return paymentAccount;
+	}
+	public void setPaymentAccount(PaymentAccount paymentAccount) {
+		this.paymentAccount = paymentAccount;
+	}
+	public Reports getReports() {
+		return reports;
+	}
+	public void setReports(Reports reports) {
+		this.reports = reports;
+	}
+	public Terminal getTerminal() {
+		return terminal;
+	}
+	public void setTerminal(Terminal terminal) {
+		this.terminal = terminal;
+	}
+	public Transaction getTransaction() {
+		return transaction;
+	}
+	public void setTransaction(Transaction transaction) {
+		this.transaction = transaction;
 	}
 	public Visa getVisa() {
 		return visa;

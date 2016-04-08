@@ -1,41 +1,35 @@
 package request.Services;
 
 import request.Request;
-import request.Model.Credentials;
 import request.Model.Application;
-import request.Model.Transaction;
+import request.Model.Credentials;
 import request.Model.Reports;
 import request.Model.ScheduledTask;
+import request.Model.Transaction;
 
 public class ScheduledTaskDelete extends Request<ScheduledTaskDelete>  {
-	private Credentials credentials = null;
 	private Application application = null;
-	private Transaction transaction = null;
+	private Credentials credentials = null;
 	private Reports reports = null;
 	private ScheduledTask scheduledTask = null;
+	private Transaction transaction = null;
 
     public ScheduledTaskDelete() {
         super("payment", "services", "scheduledTaskDelete", "POST");
         
     }
 
-	public Credentials getCredentials() {
-		return credentials;
-	}
-	public void setCredentials(Credentials credentials) {
-		this.credentials = credentials;
-	}
 	public Application getApplication() {
 		return application;
 	}
 	public void setApplication(Application application) {
 		this.application = application;
 	}
-	public Transaction getTransaction() {
-		return transaction;
+	public Credentials getCredentials() {
+		return credentials;
 	}
-	public void setTransaction(Transaction transaction) {
-		this.transaction = transaction;
+	public void setCredentials(Credentials credentials) {
+		this.credentials = credentials;
 	}
 	public Reports getReports() {
 		return reports;
@@ -48,5 +42,11 @@ public class ScheduledTaskDelete extends Request<ScheduledTaskDelete>  {
 	}
 	public void setScheduledTask(ScheduledTask scheduledTask) {
 		this.scheduledTask = scheduledTask;
+	}
+	public Transaction getTransaction() {
+		return transaction;
+	}
+	public void setTransaction(Transaction transaction) {
+		this.transaction = transaction;
 	}
 }

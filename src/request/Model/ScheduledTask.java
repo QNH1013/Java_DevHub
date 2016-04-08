@@ -12,7 +12,9 @@ public class ScheduledTask {
 	private String runStartDate = null;
 	private String amount = null;
 	private CreateDiscount createDiscount = null;
+	private CreateDiscount[] createDiscountArray = null;
 	private CreateAddOn createAddOn = null;
+	private CreateAddOn[] createAddOnArray = null;
 	private String subscriptionID = null;
 	private String name = null;
 	private String description = null;
@@ -22,9 +24,13 @@ public class ScheduledTask {
 	private String active = null;
 	private String billingDate = null;
 	private UpdateDiscount updateDiscount = null;
+	private UpdateDiscount[] updateDiscountArray = null;
 	private DeleteDiscount deleteDiscount = null;
+	private DeleteDiscount[] deleteDiscountArray = null;
 	private UpdateAddOn updateAddOn = null;
+	private UpdateAddOn[] updateAddOnArray = null;
 	private DeleteAddOn deleteAddOn = null;
+	private DeleteAddOn[] deleteAddOnArray = null;
     
 
 	public String getScheduledTaskID() {
@@ -57,11 +63,23 @@ public class ScheduledTask {
 	public void setCreateDiscount(CreateDiscount createDiscount) {
 		this.createDiscount = createDiscount;
 	}
+	public CreateDiscount[] getCreateDiscountArray() {
+		return createDiscountArray;
+	}
+	public void setCreateDiscountArray(CreateDiscount[] createDiscountArray) {
+		this.createDiscountArray = createDiscountArray;
+	}
 	public CreateAddOn getCreateAddOn() {
 		return createAddOn;
 	}
 	public void setCreateAddOn(CreateAddOn createAddOn) {
 		this.createAddOn = createAddOn;
+	}
+	public CreateAddOn[] getCreateAddOnArray() {
+		return createAddOnArray;
+	}
+	public void setCreateAddOnArray(CreateAddOn[] createAddOnArray) {
+		this.createAddOnArray = createAddOnArray;
 	}
 	public String getSubscriptionID() {
 		return subscriptionID;
@@ -117,11 +135,23 @@ public class ScheduledTask {
 	public void setUpdateDiscount(UpdateDiscount updateDiscount) {
 		this.updateDiscount = updateDiscount;
 	}
+	public UpdateDiscount[] getUpdateDiscountArray() {
+		return updateDiscountArray;
+	}
+	public void setUpdateDiscountArray(UpdateDiscount[] updateDiscountArray) {
+		this.updateDiscountArray = updateDiscountArray;
+	}
 	public DeleteDiscount getDeleteDiscount() {
 		return deleteDiscount;
 	}
 	public void setDeleteDiscount(DeleteDiscount deleteDiscount) {
 		this.deleteDiscount = deleteDiscount;
+	}
+	public DeleteDiscount[] getDeleteDiscountArray() {
+		return deleteDiscountArray;
+	}
+	public void setDeleteDiscountArray(DeleteDiscount[] deleteDiscountArray) {
+		this.deleteDiscountArray = deleteDiscountArray;
 	}
 	public UpdateAddOn getUpdateAddOn() {
 		return updateAddOn;
@@ -129,11 +159,23 @@ public class ScheduledTask {
 	public void setUpdateAddOn(UpdateAddOn updateAddOn) {
 		this.updateAddOn = updateAddOn;
 	}
+	public UpdateAddOn[] getUpdateAddOnArray() {
+		return updateAddOnArray;
+	}
+	public void setUpdateAddOnArray(UpdateAddOn[] updateAddOnArray) {
+		this.updateAddOnArray = updateAddOnArray;
+	}
 	public DeleteAddOn getDeleteAddOn() {
 		return deleteAddOn;
 	}
 	public void setDeleteAddOn(DeleteAddOn deleteAddOn) {
 		this.deleteAddOn = deleteAddOn;
+	}
+	public DeleteAddOn[] getDeleteAddOnArray() {
+		return deleteAddOnArray;
+	}
+	public void setDeleteAddOnArray(DeleteAddOn[] deleteAddOnArray) {
+		this.deleteAddOnArray = deleteAddOnArray;
 	}
 	
 	

@@ -15,6 +15,7 @@ public class Transaction {
 	private String surchargeFee = null;
 	private String actionReason = null;
 	private String verify = null;
+	private String transactionType = null;
     private String orderSource = null;
 	private String taxType = null;
 
@@ -95,6 +96,12 @@ public class Transaction {
 	}
 	public void setVerify(String verify) {
 		this.verify = verify;
+	}
+	public String getTransactionType() {
+		return transactionType;
+	}
+	public void setTransactionType(String transactionType) {
+		this.transactionType = transactionType;
 	}
 	public String getOrderSource() {
         return orderSource;

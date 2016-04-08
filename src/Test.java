@@ -58,14 +58,6 @@ public class Test {
 		// samplePaymentAccountUpdate();
 		// sampleUpdatePlan();
 		
-		//  BOARDING
-		// sampleRetrieveMccList();
-		// sampleCreateLegalEntity();
-		// sampleCreateSubMerchant();
-		// sampleRetrieveLegalEntity();
-		// sampleRetrieveSubMerchant();
-		// sampleUpdateLegalEntity();
-		// sampleUpdateSubMerchant();
 	}
 	
 	public static String sampleCreditAuthorization() {
@@ -241,49 +233,6 @@ public class Test {
 	public static String sampleUpdatePlan() {
 		request.Services.UpdatePlan updatePlan = SampleRequests.sampleServicesUpdatePlan();
 		String response = updatePlan.send();
-		return response;
-	}
-	
-	
-	public static String sampleRetrieveMccList() {
-		request.Boarding.RetrieveMccList retrieveMccList = SampleRequests.sampleBoardingRetrieveMccList();
-		String response = retrieveMccList.send();
-		return response;
-	}
-
-	public static String sampleCreateLegalEntity() {
-		request.Boarding.CreateLegalEntity createLegalEntity = SampleRequests.sampleBoardingCreateLegalEntity();
-		String response = createLegalEntity.send();
-		return response;
-	}
-
-	public static String sampleCreateSubMerchant() {
-		request.Boarding.CreateSubMerchant createSubMerchant = SampleRequests.sampleBoardingCreateSubMerchant();
-		String response = createSubMerchant.send();
-		return response;
-	}
-
-	public static String sampleRetrieveLegalEntity() {
-		request.Boarding.RetrieveLegalEntity retrieveLegalEntity = SampleRequests.sampleBoardingRetrieveLegalEntity();
-		String response = retrieveLegalEntity.send();
-		return response;
-	}
-
-	public static String sampleRetrieveSubMerchant() {
-		request.Boarding.RetrieveSubMerchant retrieveSubMerchant = SampleRequests.sampleBoardingRetrieveSubMerchant();
-		String response = retrieveSubMerchant.send();
-		return response;
-	}
-
-	public static String sampleUpdateLegalEntity() {
-		request.Boarding.UpdateLegalEntity updateLegalEntity = SampleRequests.sampleBoardingUpdateLegalEntity();
-		String response = updateLegalEntity.send();
-		return response;
-	}
-
-	public static String sampleUpdateSubMerchant() {
-		request.Boarding.UpdateSubMerchant updateSubMerchant = SampleRequests.sampleBoardingUpdateSubMerchant();
-		String response = updateSubMerchant.send();
 		return response;
 	}
 

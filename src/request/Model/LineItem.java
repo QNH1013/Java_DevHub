@@ -13,8 +13,8 @@ public class LineItem {
 	private String lineItemDiscountAmount = null;
 	private String itemCommodityCode = null;
 	private String unitCost = null;
-	private DetailTax[] detailTaxArray = null;
 	private DetailTax detailTax = null;
+	private DetailTax[] detailTaxArray = null;
     
 
 	public String getItemSequenceNumber() {
@@ -83,17 +83,17 @@ public class LineItem {
 	public void setUnitCost(String unitCost) {
 		this.unitCost = unitCost;
 	}
-	public DetailTax[] getDetailTaxArray() {
-		return detailTaxArray;
-	}
-	public void setDetailTaxArray(DetailTax[] detailTaxArray) {
-		this.detailTaxArray = detailTaxArray;
-	}
 	public DetailTax getDetailTax() {
 		return detailTax;
 	}
 	public void setDetailTax(DetailTax detailTax) {
 		this.detailTax = detailTax;
+	}
+	public DetailTax[] getDetailTaxArray() {
+		return detailTaxArray;
+	}
+	public void setDetailTaxArray(DetailTax[] detailTaxArray) {
+		this.detailTaxArray = detailTaxArray;
 	}
 	
 	
